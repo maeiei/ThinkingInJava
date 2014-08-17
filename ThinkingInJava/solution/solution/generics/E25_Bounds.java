@@ -3,7 +3,7 @@ package solution.generics;
 interface Low {
 	void c();
 
-	void d();
+	void d(); 
 }
 
 public class E25_Bounds implements Top, Low {
