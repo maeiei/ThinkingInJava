@@ -2,7 +2,6 @@ package solution.generics;
 
 interface Top {
 	void a();
-
 	void b();
 }
 
