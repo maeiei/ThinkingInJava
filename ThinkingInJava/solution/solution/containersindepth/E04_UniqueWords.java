@@ -1,16 +1,18 @@
+package solution.containersindepth;
+
 //: holding/UniqueWords.java
 import java.util.Set;
 import java.util.TreeSet;
 
 import net.mindview.util.TextFile;
 
-public class UniqueWords {
+public class E04_UniqueWords {
 	public static void main(String[] args) {
 		Set<String> words = new TreeSet<String>(new TextFile(
-				"./holding/SetOperations.java", "\\W+"));
+				"solution/solution/containersindepth/Data.data", "\\W+"));
 		System.out.println(words);
 	}
-} 
+}
 /*
  * Output: [A, B, C, Collections, D, E, F, G, H, HashSet, I, J, K, L, M, N,
  * Output, Print, Set, SetOperations, String, X, Y, Z, add, addAll, added, args,

@@ -22,6 +22,7 @@
 	<classpathentry kind="src" path="concurrency"/>
 	<classpathentry kind="src" path="solution"/>
 	<classpathentry kind="src" path="io"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Junit4.8.1"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JBossClient"/>
