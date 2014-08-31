@@ -1,30 +1,25 @@
 //: concurrency/EvenGenerator.java
 // When threads collide.
 
-public class EvenGenerator extends IntGenerator
-{
+public class EvenGenerator extends IntGenerator {
 	private int currentEvenValue = 0;
 
-	public int next()
-	{
+	public synchronized int next() {
 		++currentEvenValue; // Danger point here!
-		try
-		{
+		try {
 			Thread.currentThread().sleep(100);
-			
-		} catch (Exception e)
-		{
+
+		} catch (Exception e) {
 			// TODO: handle exception
 		}
 		++currentEvenValue;
 		return currentEvenValue;
 	}
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		EvenChecker.test(new EvenGenerator());
 	}
-} 
+}
 
 /*
  * Output: (Sample) Press Control-C to exit 89476993 not even! 89476993 not
